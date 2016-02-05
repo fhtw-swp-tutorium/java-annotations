@@ -24,8 +24,6 @@ import java.lang.annotation.Target;
  *     <li>notifyXXX</li>
  *     <li>updateXXX</li>
  * </ul>
- *
- * @author Thomas Eizinger, Senacor Technologies AG.
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
