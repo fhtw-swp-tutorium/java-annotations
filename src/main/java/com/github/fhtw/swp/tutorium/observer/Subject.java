@@ -1,4 +1,4 @@
-package at.uastw.swp.observer;
+package com.github.fhtw.swp.tutorium.observer;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

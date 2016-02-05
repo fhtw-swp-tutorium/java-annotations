@@ -1,4 +1,4 @@
-package at.uastw.swp.singleton;
+package com.github.fhtw.swp.tutorium.singleton;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
