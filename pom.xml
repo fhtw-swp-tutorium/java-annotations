@@ -6,7 +6,7 @@
 
     <groupId>com.github.fhtw-swp-tutorium</groupId>
     <artifactId>annotations</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.1-SNAPSHOT</version>
 
     <name>SwpTestTool-annotations</name>
     <description>The annotations used for automated pattern tests.</description>
