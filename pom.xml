@@ -6,8 +6,8 @@
     <artifactId>annotations</artifactId>
     <version>0.0.2-SNAPSHOT</version>
 
-    <name>SwpTestTool-annotations</name>
-    <description>The annotations used for automated pattern tests.</description>
+    <name>swp-annotations</name>
+    <description>This is a package which is used by students of the FH Technikum Wien to solve GoF pattern exercises.</description>
     <url>https://github.com/fhtw-swp-tutorium/java-annotations</url>
 
     <scm>
