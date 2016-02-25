@@ -29,7 +29,7 @@ import java.lang.annotation.Target;
 @Target(ElementType.TYPE)
 public @interface Subject {
 
-    Class<?> factory() default Subject.None.class;
+    Class<?> factory() default None.class;
 
     class None {
 
