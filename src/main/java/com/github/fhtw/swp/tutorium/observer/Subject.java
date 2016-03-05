@@ -1,5 +1,7 @@
 package com.github.fhtw.swp.tutorium.observer;
 
+import com.github.fhtw.swp.tutorium.NullFactory;
+
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -18,5 +20,5 @@ import java.lang.annotation.Target;
 @Target(ElementType.TYPE)
 public @interface Subject {
 
-    Class<?> factory();
+    Class<?> factory() default NullFactory.class;
 }
