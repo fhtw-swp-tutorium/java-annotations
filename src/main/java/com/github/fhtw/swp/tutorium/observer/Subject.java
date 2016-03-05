@@ -10,28 +10,13 @@ import java.lang.annotation.Target;
  * If the subject has constructor parameters, you can specify a factory class that should be used during testing to construct a subject instance.
  * The factory class should have a zero-argument constructor and a single public zero-argument method that returns an instance of the subject.
  *
- * The class should have methods for attaching and detaching an observer and notifying all attached observers.
- * These methods are determine by a naming convention, which allows the following names:
- * <ul>
- *     <li>attachXXX</li>
- *     <li>subscribeXXX</li>
- *     <li>addXXX</li>
- *     <li>registerXXX</li>
- *     <li>detachXXX</li>
- *     <li>unsubscribeXXX</li>
- *     <li>removeXXX</li>
- *     <li>unregisterXXX</li>
- *     <li>notifyXXX</li>
- *     <li>updateXXX</li>
- * </ul>
+ * @see RegisterObserver
+ * @see UnregisterObserver
+ * @see NotifyObservers
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
 public @interface Subject {
 
-    Class<?> factory() default None.class;
-
-    class None {
-
-    }
+    Class<?> factory();
 }
