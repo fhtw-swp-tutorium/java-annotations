@@ -1,13 +1,5 @@
 language: java
 install: true
-deploy:
-  provider: releases
-  api_key:
-    secure: n+KBoUz75AVnZeqWaxyTs4ZGyZnnYIQ83+N9YAc1Taz+Jn4Tu9E//GDVnz4Yn3CHxqimcGUVzV+3pxBFc3W8ZG0lLxxk1GPK5b1eYEtPdiGKWVEne5CobUA1Fv1JPL68T3b8hd+SA5tlmoTAOtXHBsnsV11ZlELEThmP6ziY75hGSqnYAy2+mctFGtpuzTHz2X+gjbpetNYaYeQDB6cARGOJPOCV5dv4TOlwiynvU2cu0beYE6pKXr5JjYsw65QCRrbh5+y1yrAmQoV0/Y+5detTPbasMkYDOysJ4TTNgua8sKrkV3LmkDBpEIlIfONNcgNCQeTWREVL8ycciPcjNY82U48yNKLXcX4Cg/G/mQqdwuH4Lv5bju/W0h7Uz5t80ukAenS77XA192Zi1OXU3+NAFYpiLWB4JTfaEO6yI+XrWLepQvietlseAVLDSjNgmRl9fqrOipWCV7/hvoj2JJ9os4ML+hf9vIAmQCxQyyxA45IynnzzjzMU+OT6oLKZQmvK1p7Qe9OHJOAFalGgnFEQ9iC82vnd+1XLUmSkqDx6pPvheoaxBem+9d6zL+rzLFuAsH2VNVfrSdO2ErAmPsksM3hF13TOnN6CpbEev54G4rle5/Zx+ILUWc6Ej3KL+eCgDKeybHM/LFeMv8VTSlSAqC8PNVSQfBufMQwpXJc=
-  file: target/annotations-*.jar
-  on:
-    tags: true
-    repo: fhtw-swp-tutorium/java-annotations
 after_success:
 - chmod +x ./mvnw
 - "./mvnw deploy --settings .mvn/settings.xml -DskipTests=true -B"
