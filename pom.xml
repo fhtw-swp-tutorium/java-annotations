@@ -4,7 +4,7 @@
 
     <groupId>com.github.fhtw-swp-tutorium</groupId>
     <artifactId>annotations</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
 
     <name>swp-annotations</name>
     <description>This is a package which is used by students of the FH Technikum Wien to solve GoF pattern exercises.</description>
