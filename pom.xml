@@ -4,7 +4,7 @@
 
     <groupId>com.github.fhtw-swp-tutorium</groupId>
     <artifactId>annotations</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3-SNAPSHOT</version>
 
     <name>swp-annotations</name>
     <description>This is a package which is used by students of the FH Technikum Wien to solve GoF pattern exercises.</description>
@@ -14,7 +14,7 @@
         <connection>scm:git:git@github.com:fhtw-swp-tutorium/java-annotations.git</connection>
         <developerConnection>scm:git:git@github.com:fhtw-swp-tutorium/java-annotations.git</developerConnection>
         <url>git@github.com:fhtw-swp-tutorium/java-annotations.git</url>
-        <tag>v0.0.2</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <licenses>
