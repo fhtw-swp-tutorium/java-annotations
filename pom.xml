@@ -4,7 +4,7 @@
 
     <groupId>com.github.fhtw-swp-tutorium</groupId>
     <artifactId>annotations</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
 
     <name>swp-annotations</name>
     <description>This is a package which is used by students of the FH Technikum Wien to solve GoF pattern exercises.</description>
@@ -60,29 +60,10 @@
     <profiles>
         <profile>
             <id>release</id>
-
             <build>
                 <plugins>
                     <plugin>
-                        <inherited>true</inherited>
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>1.5</version>
-                        <configuration>
-                            <keyname>Thomas Eizinger</keyname>
-                            <gpgArguments>
-                                <argument>--no-tty</argument>
-                            </gpgArguments>
-                            <useAgent>false</useAgent>
-                        </configuration>
-                        <executions>
-                            <execution>
-                                <id>sign-artifacts</id>
-                                <phase>verify</phase>
-                                <goals>
-                                    <goal>sign</goal>
-                                </goals>
-                            </execution>
-                        </executions>
                     </plugin>
                 </plugins>
             </build>
@@ -106,6 +87,28 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-deploy-plugin</artifactId>
                     <version>2.8.2</version>
+                </plugin>
+
+                <plugin>
+                    <inherited>true</inherited>
+                    <artifactId>maven-gpg-plugin</artifactId>
+                    <version>1.5</version>
+                    <configuration>
+                        <keyname>Thomas Eizinger</keyname>
+                        <gpgArguments>
+                            <argument>--no-tty</argument>
+                        </gpgArguments>
+                        <useAgent>false</useAgent>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>sign-artifacts</id>
+                            <phase>verify</phase>
+                            <goals>
+                                <goal>sign</goal>
+                            </goals>
+                        </execution>
+                    </executions>
                 </plugin>
             </plugins>
         </pluginManagement>
