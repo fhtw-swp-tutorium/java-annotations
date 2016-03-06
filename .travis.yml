@@ -1,8 +1,5 @@
 language: java
 install: true
-before_script:
-- chmod +x ./mvnw
-script: "./mvnw deploy --settings .mvn/settings.xml"
 deploy:
   provider: releases
   api_key:
@@ -11,6 +8,9 @@ deploy:
   on:
     tags: true
     repo: fhtw-swp-tutorium/java-annotations
+after_success:
+- chmod +x ./mvnw
+- "./mvnw deploy --settings .mvn/settings.xml -DskipTests=true -B"
 env:
   global:
   - secure: EeKBSt8j1cMcOj75xuBfcJ2D7cEfu1OfubqWwXsvUyZpVO7i+WA/y5+sG7TuhOSaQ4w12+fihw5XYdirAFnY1Ikig1vFGka1yUiNquTjblLEBHJpEKwvMTpDgGbppdI8zmHYpQuQWeJ0Zc52CyiJQSTgbE/zA8aY7pQ01OGWvH9VTHIi0eW/WUGp1AKPEH0EJtAWZxP7N8ZoedhlsWLN29a9H3DzqUJoCDW6FTMTqzisON8M1prPSC2CtfZHdev07sx2RhhpfZgdymbQC6lqr7xJYlDA22y7gdnv6RnZW1c1iSEOtrx6fu1ht7KzZE/7YhuyYIfxJkEvp9/7o0RYTi6WgAhOiSGNFhfLt5XPPnywEj5+kizI1O1z/BAIFTLYYwnLDfEblBxzrdAS1vKqkaAOBH1iApQxDN6hD4MKqiEi88JKxRNM6JIsxbtDo+jVLqTD75LAXQDBAAGL9k9DArYt0zJW1kXwtYp5txCGPEKtCWuckVyxlw/SlXXfS33d1qtxltyeUM4gat17ElVQS2sl2MJdqztMi3c/2vS+KfWNVRNrGQb1aBaXf5j9KW0B90viXMaEjkMHAxmQ6+TxvLTH59g2/5VGWcAwmW9KMnVpsbCnk4Yi4vYRK66+yPVEZiews+S8fNb6bSFfaffexZPB0MTMOs7QQIxyQ3X4PQQ=
