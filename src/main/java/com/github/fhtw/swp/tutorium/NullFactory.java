@@ -9,4 +9,10 @@ import com.github.fhtw.swp.tutorium.observer.Subject;
  * @see Subject
  * @see Invoker
  */
-public class NullFactory { }
+public final class NullFactory {
+
+    /**
+     * No instances allowed.
+     */
+    private NullFactory() { }
+}
