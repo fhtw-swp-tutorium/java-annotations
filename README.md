@@ -5,3 +5,4 @@
 
 Dieses Repository enthält die Annotationen für die Übungen aus SWP. Sie können die aktuelle Version bequem über Maven einbinden. (Klick auf den Maven-Badge oben.)
 
+Release Notes befinden sich in den Beschreibungen der Tags unter [Releases](https://github.com/fhtw-swp-tutorium/java-annotations/releases)
