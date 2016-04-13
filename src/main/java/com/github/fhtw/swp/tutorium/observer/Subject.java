@@ -21,8 +21,9 @@ public @interface Subject {
     /**
      * Defines a factory class that if specified is used to construct instances of the annotated class.
      * Necessary if the annotated class does NOT provide a zero-argument constructor.
+     * <p>
+     * The referenced class MUST provide a zero-argument constructor and a single public zero-argument method that returns an instance of the annotated class.
      *
-     * The referenced class MUST provide a zero-argument constructor and a single public zero-argument method that returns an instances of the annotated class.
      * @return The factory class
      */
     Class<?> factory() default NullFactory.class;

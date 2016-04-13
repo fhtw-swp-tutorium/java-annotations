@@ -6,11 +6,12 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Annotation to be used as a marker for a method that allows to notify/update all registered observers.
+ * Defines a method on a subject that notifies / updates all registered observers.
  *
  * @see Subject
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
 public @interface NotifyObservers {
+
 }

@@ -18,5 +18,6 @@ public final class NullFactory {
     /**
      * No instances allowed.
      */
-    private NullFactory() { }
+    private NullFactory() {
+    }
 }
