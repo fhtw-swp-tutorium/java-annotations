@@ -6,6 +6,8 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
+ * Defines a component of the decorator pattern.
+ *
  * @see Decorator
  */
 @Retention(RetentionPolicy.RUNTIME)

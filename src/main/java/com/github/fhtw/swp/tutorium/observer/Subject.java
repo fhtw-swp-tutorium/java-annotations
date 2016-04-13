@@ -9,8 +9,6 @@ import java.lang.annotation.Target;
 
 /**
  * Annotation to be used as a marker for the subject of an observer pattern.
- * If the subject has constructor parameters, you can specify a factory class that should be used during testing to construct a subject instance.
- * The factory class should have a zero-argument constructor and a single public zero-argument method that returns an instance of the subject.
  *
  * @see RegisterObserver
  * @see UnregisterObserver
@@ -20,5 +18,12 @@ import java.lang.annotation.Target;
 @Target(ElementType.TYPE)
 public @interface Subject {
 
+    /**
+     * Defines a factory class that if specified is used to construct instances of the annotated class.
+     * Necessary if the annotated class does NOT provide a zero-argument constructor.
+     *
+     * The referenced class MUST provide a zero-argument constructor and a single public zero-argument method that returns an instances of the annotated class.
+     * @return The factory class
+     */
     Class<?> factory() default NullFactory.class;
 }

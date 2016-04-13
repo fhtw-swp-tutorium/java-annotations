@@ -8,6 +8,7 @@ import java.lang.annotation.Target;
 /**
  * Defines a method on a composite which allows to add further components.
  * This method MUST take a single parameter whose type is the component.
+ *
  * @see Composite
  * @see Leaf
  */

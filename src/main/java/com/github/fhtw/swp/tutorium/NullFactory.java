@@ -1,6 +1,8 @@
 package com.github.fhtw.swp.tutorium;
 
 import com.github.fhtw.swp.tutorium.command.Invoker;
+import com.github.fhtw.swp.tutorium.composite.Composite;
+import com.github.fhtw.swp.tutorium.decorator.Decorator;
 import com.github.fhtw.swp.tutorium.observer.Subject;
 
 /**
@@ -8,6 +10,8 @@ import com.github.fhtw.swp.tutorium.observer.Subject;
  *
  * @see Subject
  * @see Invoker
+ * @see Decorator
+ * @see Composite
  */
 public final class NullFactory {
 

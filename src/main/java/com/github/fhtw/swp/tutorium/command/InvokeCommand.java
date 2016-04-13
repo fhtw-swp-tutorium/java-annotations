@@ -6,11 +6,12 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Annotation to be used as a marker for a method that allows the invocation of a command.
+ * Defines the method on an invoker that invokes commands.
  *
  * @see Invoker
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
 public @interface InvokeCommand {
+
 }
