@@ -18,7 +18,7 @@ import java.lang.annotation.Target;
 public @interface Composite {
 
     /**
-     * @return The component class of this leaf.
+     * @return The component class of this composite.
      */
     Class<?> value();
 
