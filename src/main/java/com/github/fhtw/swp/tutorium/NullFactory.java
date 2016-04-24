@@ -13,11 +13,16 @@ import com.github.fhtw.swp.tutorium.observer.Subject;
  * @see Decorator
  * @see Composite
  */
-public final class NullFactory {
+public final class NullFactory implements Factory {
 
     /**
      * No instances allowed.
      */
     private NullFactory() {
+    }
+
+    @Override
+    public Object getInstance() {
+        throw new UnsupportedOperationException("NullFactory cannot create instances");
     }
 }
