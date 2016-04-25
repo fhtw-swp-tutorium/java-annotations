@@ -1,5 +1,6 @@
 package com.github.fhtw.swp.tutorium.decorator;
 
+import com.github.fhtw.swp.tutorium.Factory;
 import com.github.fhtw.swp.tutorium.NullFactory;
 
 import java.lang.annotation.ElementType;
@@ -18,11 +19,9 @@ public @interface Decorator {
 
     /**
      * Defines a factory class that if specified is used to construct instances of the annotated class.
-     * Necessary if the annotated class does NOT provide a zero-argument constructor.
-     * <p>
-     * The referenced class MUST provide a zero-argument constructor and a single public zero-argument method that returns an instance of the annotated class.
      *
      * @return The factory class
+     * @see Factory
      */
-    Class<?> factory() default NullFactory.class;
+    Class<? extends Factory> factory() default NullFactory.class;
 }
