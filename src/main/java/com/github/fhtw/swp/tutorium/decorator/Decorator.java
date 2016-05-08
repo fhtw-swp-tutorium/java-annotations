@@ -1,15 +1,12 @@
 package com.github.fhtw.swp.tutorium.decorator;
 
-import com.github.fhtw.swp.tutorium.Factory;
-import com.github.fhtw.swp.tutorium.NullFactory;
-
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Defines a decorator of the decorater pattern.
+ * Defines a decorator of the decorator pattern.
  *
  * @see Component
  */
@@ -18,10 +15,7 @@ import java.lang.annotation.Target;
 public @interface Decorator {
 
     /**
-     * Defines a factory class that if specified is used to construct instances of the annotated class.
-     *
-     * @return The factory class
-     * @see Factory
+     * Defines the decorated class of this decorator. Also referred to as "Component".
      */
-    Class<? extends Factory> factory() default NullFactory.class;
+    Class<?> value();
 }
