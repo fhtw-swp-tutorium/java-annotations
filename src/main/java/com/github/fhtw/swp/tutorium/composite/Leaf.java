@@ -15,4 +15,8 @@ import java.lang.annotation.Target;
 @Target(ElementType.TYPE)
 public @interface Leaf {
 
+    /**
+     * @return The component class of this leaf.
+     */
+    Class<?> value();
 }
